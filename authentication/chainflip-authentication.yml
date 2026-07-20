@@ -1,0 +1,33 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.chainflip.io/brokers/how-to-use-chainflip-sdk
+summary:
+  types: [none, node-operated]
+  api_key_in: []
+  oauth2_flows: []
+description: >-
+  Chainflip is a permissionless, non-custodial protocol. Its integration
+  surfaces do not use API keys, bearer tokens, or OAuth. Access is either
+  fully open (public RPC / quoting) or gated by operating a node account whose
+  authority derives from on-chain identity and cryptographic signatures.
+schemes:
+  - name: public-rpc
+    type: none
+    applies_to: SDK quoting and swap initiation (getChains, getAssets, getQuoteV2, requestDepositAddressV2, getStatusV2)
+    notes: No credentials required. Calls hit the public Chainflip RPC node for the selected network, or a custom rpcUrl.
+  - name: broker-account
+    type: node-operated
+    applies_to: Broker API (routing swaps, earning broker commission)
+    notes: >-
+      Authority comes from running/connecting to a Broker node registered on
+      the State Chain; broker actions are authorised by the broker account's
+      keypair, not an HTTP API key. A hosted Broker API URL may be supplied via
+      the SDK `broker` option.
+  - name: lp-account
+    type: node-operated
+    applies_to: Liquidity Provider RPC / LP operations
+    notes: LP actions are signed by the LP account keypair on the State Chain.
+  - name: validator-keys
+    type: node-operated
+    applies_to: Validator node operation and governance
+    notes: Validator/governance transactions are signed with node keys (see cf-gov and cf-trezor-signer CLI tools).
