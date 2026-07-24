@@ -1,8 +1,16 @@
 aid: chainflip
 name: Chainflip
-description: 'Chainflip is a company surfaced as a portfolio company of pantera-capital and added to the
-  API Evangelist network as a stub for enrichment. Sector: crypto. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: >-
+  Chainflip is a decentralised, permissionless cross-chain protocol for native
+  asset swaps and cross-chain lending. It lets users and integrators swap and
+  borrow against native assets such as BTC, ETH, SOL, USDC, USDT, TRX, and DOT
+  across chains without wrapped assets, traditional bridges, or centralised
+  custody. The protocol runs as a Proof-of-Stake MPC network of roughly 150
+  validators securing a fully on-chain trading system built on an
+  application-specific State Chain and a just-in-time (JIT) AMM liquidity
+  design. Developers integrate via the typed @chainflip/sdk JavaScript SDK and
+  the Broker / State Chain JSON-RPC interfaces to fetch quotes, request deposit
+  addresses, encode vault swaps, and route swaps for broker commission.
 url: https://raw.githubusercontent.com/api-evangelist/chainflip/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +18,33 @@ x-backed-by:
 - pantera-capital
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://framerusercontent.com/assets/hsh8gyx07K6ClX1WDNl5EG8C9s.png
 tags:
 - Company
 - Crypto
+- Blockchain
+- DeFi
+- Cross-Chain
+- Swaps
+- Bridge
+- Lending
+- Liquidity
+- Web3
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +54,52 @@ maintainers:
 common:
 - type: Website
   url: https://chainflip.io/
+- type: DeveloperPortal
+  url: https://docs.chainflip.io/
+- type: Documentation
+  url: https://docs.chainflip.io/
+- type: APIReference
+  url: https://docs.chainflip.io/brokers/broker-api
+- type: GettingStarted
+  url: https://docs.chainflip.io/swapping/integrations/javascript-sdk/quick-start
+- type: Blog
+  url: https://blog.chainflip.io/
+- type: GitHubOrganization
+  url: https://github.com/chainflip-io
+- type: Roadmap
+  url: https://chainflip.io/roadmap-v2
+- type: ChangeLog
+  url: https://chainflip.io/changelog
+- type: ChangeLog
+  name: Chainflip Changelog (structured)
+  url: changelog/chainflip-changelog.yml
+- type: Whitepaper
+  url: https://assets.chainflip.io/whitepaper.pdf
+- type: LLMsTxt
+  url: llms/chainflip-llms.txt
+- type: Packages
+  url: packages/chainflip-packages.yml
+- type: SDKs
+  name: Chainflip JavaScript SDK
+  url: packages/chainflip-packages.yml
+- type: CLI
+  url: cli/chainflip-cli.yml
+- type: Sandbox
+  name: Chainflip test networks (Perseverance / Sisyphos)
+  url: sandbox/chainflip-sandbox.yml
+- type: Authentication
+  url: authentication/chainflip-authentication.yml
+- type: Conventions
+  url: conventions/chainflip-conventions.yml
+- type: DomainSecurity
+  url: security/chainflip-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/chainflip-vulnerability-disclosure.yml
+- type: Security
+  name: Chainflip Bug Bounty & Responsible Disclosure
+  url: https://github.com/chainflip-io/security
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

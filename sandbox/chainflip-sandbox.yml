@@ -1,0 +1,29 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.chainflip.io/brokers/how-to-use-chainflip-sdk
+description: >-
+  Chainflip exposes public test networks that integrators select via the SDK
+  `network` option (or a custom `rpcUrl`). Swaps on the test networks use
+  testnet assets, so integrations can be exercised end-to-end without mainnet
+  funds. No API keys are required to obtain quotes or request deposit addresses.
+networks:
+  - name: mainnet
+    mode: live
+    description: Production Chainflip network.
+  - name: perseverance
+    mode: test
+    description: Primary public testnet; default network when unspecified in the SDK. TRON testnet integration deployed here 2026-05-22.
+  - name: sisyphos
+    mode: test
+    description: Internal/experimental Chainflip test network selectable via the SDK network option.
+sdk_configuration:
+  network_option: "'mainnet' | 'perseverance' | 'sisyphos'"
+  rpc_url: Optional custom Chainflip RPC node endpoint; defaults to the public node for the selected network.
+  broker_url: Optional { url } for a Broker API; defaults to Chainflip's hosted Broker API for the network.
+  feature_flags:
+    - dcaV2  # opt-in DCA V2 quoting strategy
+explorer: https://scan.chainflip.io/
+notes: >-
+  Chainflip does not use test-vs-live API key prefixes or magic test card
+  numbers (it is a non-custodial cross-chain swap protocol, not a card
+  acquirer); the test surface is network selection plus testnet on-chain assets.

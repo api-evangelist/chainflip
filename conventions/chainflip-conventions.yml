@@ -1,0 +1,45 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.chainflip.io/brokers/how-to-use-chainflip-sdk
+description: >-
+  Cross-cutting request/response semantics for building on Chainflip via the
+  JavaScript SDK (@chainflip/sdk) and the State Chain / Broker JSON-RPC
+  interfaces. Chainflip is not a REST API; interactions are typed SDK calls or
+  JSON-RPC requests against a Chainflip node.
+transport:
+  style: json-rpc
+  sdk: "@chainflip/sdk (SwapSDK class)"
+  endpoint_selection:
+    network: "'mainnet' | 'perseverance' | 'sisyphos'"
+    rpcUrl: optional custom RPC node
+    broker: optional { url } hosted Broker API
+authentication:
+  ref: authentication/chainflip-authentication.yml
+  style: none (public RPC) / node-account signatures (broker, LP, validator)
+versioning:
+  style: method-suffix
+  notes: >-
+    SDK methods are versioned by suffix (getQuoteV2, requestDepositAddressV2,
+    getStatusV2); protocol upgrades ship as numbered releases (v2.0, 1.11).
+    Opt-in behaviours are gated behind enabledFeatures flags (e.g. dcaV2).
+idempotency:
+  supported: false
+  notes: >-
+    No documented HTTP idempotency-key header. Swaps are made idempotent by the
+    on-chain model: a swap is bound to a unique generated deposit address (or a
+    signed vault-swap transaction), so re-quoting is side-effect-free and a swap
+    only executes when funds arrive at its deposit address.
+pagination:
+  supported: false
+  notes: Quote/status/asset queries return complete result sets; historical activity is queried via the block explorer / indexer.
+error_semantics:
+  style: json-rpc-error
+  notes: Errors surface as JSON-RPC error objects / thrown SDK exceptions rather than RFC 9457 problem+json.
+tracing:
+  swap_identifier: deposit address (and swap id / channel id) returned by requestDepositAddressV2; live status via getStatusV2 and scan.chainflip.io.
+rate_limiting:
+  notes: Public RPC nodes are shared infrastructure; integrators running high volume are expected to run or use a dedicated broker/RPC node.
+cross_links:
+  authentication: authentication/chainflip-authentication.yml
+  changelog: changelog/chainflip-changelog.yml
+  sandbox: sandbox/chainflip-sandbox.yml

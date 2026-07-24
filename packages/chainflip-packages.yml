@@ -1,0 +1,73 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.npmjs.com/org/chainflip
+packages:
+  - language: javascript
+    registry: npm
+    name: "@chainflip/sdk"
+    version: 2.2.1
+    url: https://www.npmjs.com/package/@chainflip/sdk
+    install: npm install @chainflip/sdk
+    repository: https://github.com/chainflip-io/chainflip-sdk-monorepo
+    description: Typed JavaScript/TypeScript Swap SDK for integrating native cross-chain swaps (getChains, getAssets, getQuoteV2, requestDepositAddressV2, encodeVaultSwapData, getStatusV2).
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@chainflip/rpc"
+    version: 2.2.2
+    url: https://www.npmjs.com/package/@chainflip/rpc
+    install: npm install @chainflip/rpc
+    repository: https://github.com/chainflip-io/chainflip-product-toolkit
+    description: Typed client for the Chainflip State Chain JSON-RPC interface.
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@chainflip/utils"
+    version: 2.2.3
+    url: https://www.npmjs.com/package/@chainflip/utils
+    install: npm install @chainflip/utils
+    repository: https://github.com/chainflip-io/chainflip-product-toolkit
+    description: Shared utility helpers for building on Chainflip.
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@chainflip/bitcoin"
+    version: 2.2.0
+    url: https://www.npmjs.com/package/@chainflip/bitcoin
+    install: npm install @chainflip/bitcoin
+    repository: https://github.com/chainflip-io/chainflip-product-toolkit
+    description: Decode Bitcoin addresses emitted by the Chainflip State Chain.
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@chainflip/solana"
+    version: 2.2.5
+    url: https://www.npmjs.com/package/@chainflip/solana
+    install: npm install @chainflip/solana
+    repository: https://github.com/chainflip-io/chainflip-product-toolkit
+    description: Solana helpers for Chainflip integrations.
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@chainflip/scale"
+    version: 2.2.0
+    url: https://www.npmjs.com/package/@chainflip/scale
+    install: npm install @chainflip/scale
+    repository: https://github.com/chainflip-io/chainflip-product-toolkit
+    description: SCALE codec helpers for the Chainflip State Chain.
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@chainflip/metamask-snap"
+    version: 1.0.3
+    url: https://www.npmjs.com/package/@chainflip/metamask-snap
+    install: npm install @chainflip/metamask-snap
+    repository: https://github.com/chainflip-io/metamask-snap-chainflip
+    description: MetaMask Snap for interacting with the Chainflip State Chain.
+    official: true
+notes: >-
+  All @chainflip/* scoped packages are published by Chainflip Labs. The
+  marquee integration library is @chainflip/sdk; the others are supporting
+  toolkit libraries from chainflip-product-toolkit. Numerous third-party
+  aggregator plugins (e.g. @swapkit/plugins, @clypto/plugin-chainflip) also
+  wrap Chainflip but are not first-party and are excluded here.

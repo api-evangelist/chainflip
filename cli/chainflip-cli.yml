@@ -1,0 +1,26 @@
+generated: '2026-07-18'
+method: searched
+source: https://github.com/chainflip-io/homebrew-tap
+name: Chainflip CLI tools
+description: >-
+  First-party Chainflip Labs command-line tools distributed via an official
+  Homebrew tap. Homebrew installation clears the macOS quarantine attribute,
+  avoiding the Gatekeeper "damaged app" error seen with direct binary downloads.
+install:
+  - method: homebrew-tap
+    steps:
+      - brew tap chainflip-io/tap
+tools:
+  - name: cf-gov
+    purpose: Chainflip governance transaction submission tool.
+    install: brew install chainflip-io/tap/cf-gov
+    source_repo: https://github.com/chainflip-io/cf-gov-js
+  - name: cf-trezor-signer
+    purpose: Chainflip Trezor transaction signing tool.
+    install: brew install chainflip-io/tap/cf-trezor-signer
+    source_repo: https://github.com/chainflip-io/cf-trezor-signer
+notes: >-
+  Chainflip also ships a `chainflip-cli` engine binary and broker/LP node
+  binaries as part of the protocol backend (chainflip-io/chainflip-backend,
+  chainflip-io/chainflip-mainnet-apis) for node operators; the Homebrew tap
+  above covers the standalone governance and signing utilities.

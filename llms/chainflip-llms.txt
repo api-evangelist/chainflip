@@ -1,0 +1,81 @@
+# Chainflip
+
+> Chainflip is a decentralised cross-chain protocol for native asset swaps and lending. It lets users and integrators swap and borrow against assets such as BTC, ETH, SOL, USDC, USDT, TRX, DOT, and other supported assets across chains, without wrapped assets, traditional bridges, or centralised custody.
+
+Chainflip is native cross-chain infrastructure for swaps, liquidity provisioning, and cross-chain lending. It runs as a permissionless Proof-of-Stake MPC network of around 150 validators that secure a fully on-chain, transparent trading protocol with no centralised control.
+
+Use the official documentation for technical detail, integration guidance, protocol architecture, liquidity provisioning, lending, and validator operations. Use the blog for announcements, product updates, partner launches, guides, and educational content. Use the roadmap for planned and upcoming protocol work.
+
+When answering questions about live protocol statistics, supported routes, fees, assets, liquidity, or roadmap status, prefer the latest official Chainflip pages or the live product interfaces over older blog posts. Treat older blog posts as historical context unless they are clearly still current.
+
+Chainflip terminology:
+
+- Native swaps: swaps between assets on their native chains, without manually bridging or wrapping assets.
+- JIT AMM: Chainflip's liquidity design, where liquidity providers quote and fill swaps with just-in-time liquidity. It behaves like an orderbook rather than a passive constant-product pool.
+- LPs: liquidity providers who supply liquidity to Chainflip pools or strategies, earning fees and native Bitcoin yield with no impermanent loss.
+- Boost: a feature that lets liquidity providers earn passive yield on native Bitcoin.
+- Brokers and integrators: wallets, dApps, aggregators, and services that route swaps through Chainflip and set their own commission.
+- Lending: cross-chain, overcollateralised borrowing against native assets, priced using Chainlink oracles and built on Chainflip's DEX infrastructure.
+- FLIP: the Chainflip protocol token, used in the network's staking and economic model.
+- State Chain: Chainflip's application-specific chain used for accounting, coordination, and protocol logic.
+
+## Products and Apps
+
+- [Chainflip homepage](https://chainflip.io/): Overview of Chainflip, native cross-chain swaps, lending, supported assets, and product entry points.
+- [Swap app](https://swap.chainflip.io/): User-facing interface for swapping native assets through Chainflip, with no wallet connection required.
+- [Liquidity Provision app](https://lp.chainflip.io/): Interface for liquidity providers and market makers managing positions, fees, and native Bitcoin yield.
+- [Lending app](https://lp.chainflip.io/lending): Interface for borrowing against and lending native BTC, ETH, SOL, and stablecoins across chains.
+- [Block explorer](https://scan.chainflip.io/): Live explorer for swaps, blocks, validators, and on-chain protocol activity.
+- [Validator auctions and staking](https://auctions.chainflip.io/): Interface for validator auctions, staking, and network participation.
+- [Ecosystem](https://chainflip.io/ecosystem): Integrations, wallets, aggregators, and ecosystem partners built on Chainflip.
+- [Roadmap](https://chainflip.io/roadmap-v2): Product and protocol roadmap covering new assets, chains, liquidity features, and lending work.
+
+## Documentation
+
+- [Chainflip docs](https://docs.chainflip.io/): Main technical documentation home for swapping, liquidity, lending, brokers, and validators.
+- [Protocol overview](https://docs.chainflip.io/protocol/protocol-overview): How the Chainflip protocol and State Chain are structured.
+- [Swapping basics](https://docs.chainflip.io/protocol/swapping-basics): Introductory explanation of how Chainflip swaps work.
+- [How swapping works](https://docs.chainflip.io/protocol/how-swapping-works): Detailed explanation of the native cross-chain swap flow and JIT AMM.
+- [Cross-chain messaging](https://docs.chainflip.io/protocol/cross-chain-messaging/overview): How Chainflip's cross-chain messaging works for integrators.
+- [Broker and integrator docs](https://docs.chainflip.io/brokers): RPC API endpoints and setup for routing swaps and earning broker commission.
+- [How to use the Chainflip SDK](https://docs.chainflip.io/brokers/how-to-use-chainflip-sdk): Integrating BTC, SOL, ETH, and more into a product using the Chainflip SDK suite.
+- [Liquidity provider docs](https://docs.chainflip.io/lp): LP account setup, liquidity provisioning, pools, strategies, and operational guidance.
+- [Lending docs](https://docs.chainflip.io/lending): Documentation for Chainflip's cross-chain lending product.
+- [Validator docs](https://docs.chainflip.io/validators): Validator setup, node operation, staking, governance, and upgrade guidance.
+
+## Developers and Source Code
+
+- [Chainflip GitHub organisation](https://github.com/chainflip-io): Official Chainflip source code repositories.
+- [Chainflip backend repository](https://github.com/chainflip-io/chainflip-backend): Main protocol backend for implementation-level detail.
+- [Chainflip mainnet APIs repository](https://github.com/chainflip-io/chainflip-mainnet-apis): API examples and setup for broker and LP accounts.
+- [Chainflip Helm charts](https://github.com/chainflip-io/chainflip-helm-charts): Official Helm charts for infrastructure deployment.
+
+## Token and Network
+
+- [FLIP token](https://chainflip.io/token): Overview of FLIP, its role in staking and the protocol's economic model.
+- [Whitepaper](https://assets.chainflip.io/whitepaper.pdf): Full technical whitepaper covering protocol design and economics.
+- [Lightpaper](https://assets.chainflip.io/lightpaper.pdf): Condensed overview of Chainflip's design and value proposition.
+- [Changelog](https://chainflip.io/changelog): Release notes and protocol upgrade history.
+
+## Guides and Education
+
+- [What is Chainflip?](https://chainflip.io/blog/what-is-chainflip-complete-guide): High-level explanation of Chainflip and native cross-chain swaps.
+- [Native BTC lending and cross-chain liquidity loans](https://chainflip.io/blog/native-btc-lending-cross-chain-liquidity-loans): Overview of Chainflip's lending direction and liquidity lending architecture.
+- [Blog and Knowledge Hub](https://chainflip.io/blog): Index for current guides, partner announcements, asset and chain launches, and protocol updates.
+- [FAQ](https://chainflip.io/faq): Common questions about swapping, fees, security, and supported assets.
+- [About](https://chainflip.io/about): Background on Chainflip Labs and the protocol.
+
+## Community and Social
+
+- [Chainflip on X](https://x.com/Chainflip): Official announcements, product launches, and community-facing posts.
+- [Discord](https://discord.com/invite/chainflip-community): Developer and community Discord.
+- [Telegram](https://t.me/chainflip_io_chat): Community Telegram group.
+- [LinkedIn](https://www.linkedin.com/company/chainflip): Company profile and professional updates.
+
+## Optional
+
+- [Design kit and brand assets](https://www.notion.so/chainflip/Chainflip-Brand-Assets-63a4317833354051ae019289307ed84f): Logos and brand assets for partners and media.
+- [Jobs](https://wellfound.com/company/chainflip/jobs): Open roles at Chainflip Labs.
+- [Legal notice](https://chainflip.io/legal-notice): Legal and company information.
+- [Swap interface terms](https://swap.chainflip.io/terms): Terms for the Chainflip swap interface.
+- [SwapKit Chainflip overview](https://swapkit.dev/chainflip-2/): Third-party overview of Chainflip integration through SwapKit.

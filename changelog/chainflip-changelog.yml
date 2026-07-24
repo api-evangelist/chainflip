@@ -1,0 +1,32 @@
+generated: '2026-07-18'
+method: searched
+source: https://chainflip.io/changelog
+scheme: date-based
+description: >-
+  Chainflip publishes a dated changelog of product and protocol releases.
+  Major protocol upgrades also carry numbered releases (e.g. v2.0, 1.11, 1.10),
+  but individual features ship on their own timelines rather than in strict
+  version lockstep.
+current_version: v2.0
+entries:
+  - date: '2026-06-26'
+    category: enhancement
+    highlights:
+      - Technical SEO and site structure updated across key pages (SEO & GEO improvements).
+  - date: '2026-06-17'
+    category: release
+    highlights:
+      - Chainflip Liquidity Lending (CLL) launched.
+      - Boosting Chainflip Liquidity Lending (BCLL) launched.
+      - Oracle-Based Stablecoin Strategies introduced.
+      - TRON integration with native USDT (TRC-20) swaps.
+      - Lending 2.0 overhaul.
+    breaking: false
+  - date: '2026-06-10'
+    category: milestone
+    highlights:
+      - FLIP token burns have fully offset all emissions since the genesis event.
+  - date: '2026-05-22'
+    category: integration
+    highlights:
+      - TRON testnet deployment on the Perseverance network.
