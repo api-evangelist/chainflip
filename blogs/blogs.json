@@ -3,9 +3,9 @@
   "feeds": [
     {
       "source": "https://docs.chainflip.io/swapping/integrations/javascript-sdk/quick-start",
-      "error": "URLError"
+      "error": "HTTPError"
     }
   ],
   "post_count": 0,
-  "fetched": "2026-08-15T12:22:01Z"
+  "fetched": "2026-08-22T20:20:02Z"
 }
