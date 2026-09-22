@@ -45,6 +45,9 @@ specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-18'
 image: https://framerusercontent.com/assets/hsh8gyx07K6ClX1WDNl5EG8C9s.png
+x-docs-platform: nextra
+x-docs-platform-confidence: medium
+x-docs-platform-checked: 2026-09-21
 tags:
 - Company
 - Crypto
