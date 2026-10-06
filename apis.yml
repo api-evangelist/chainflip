@@ -43,7 +43,7 @@ accessModel:
   method: derived
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-18'
+modified: '2026-10-06'
 image: https://framerusercontent.com/assets/hsh8gyx07K6ClX1WDNl5EG8C9s.png
 x-docs-platform: nextra
 x-docs-platform-confidence: medium
@@ -77,6 +77,8 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- url: https://chainflip.io/blog
+  type: Blog
 - type: Website
   url: https://chainflip.io/
 - type: DeveloperPortal
