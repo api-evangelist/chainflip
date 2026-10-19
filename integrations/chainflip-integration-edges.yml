@@ -12,7 +12,97 @@ edges:
   trust_score: 2
   detected_by: sweep-crypto.py
   first_seen: '2026-10-14'
+- partner_name: npm registry
+  partner: npm
+  partner_match: register
+  type: register
+  direction: provider-built
+  category: official SDK (JavaScript/TypeScript)
+  evidence: https://www.npmjs.com/package/@chainflip/bitcoin
+  channel: package-registry
+  relationship: distribution-channel
+  contract_reference:
+    register: npm registry (public registry JSON)
+    spec_file: null
+    language: JavaScript/TypeScript
+    packages:
+    - name: '@chainflip/bitcoin'
+      version: 2.3.1
+      released: '2026-09-17'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@chainflip/bitcoin
+      repo_leg: github-org:chainflip-io
+      publisher_leg: email:chainflip.io
+      matched_by: domain
+    - name: '@chainflip/metamask-snap'
+      version: 1.0.3
+      released: '2024-08-26'
+      released_field: modified
+      lapsed: true
+      page: https://www.npmjs.com/package/@chainflip/metamask-snap
+      repo_leg: github-org:chainflip-io
+      publisher_leg: email:chainflip.io
+      matched_by: domain
+    - name: '@chainflip/rpc'
+      version: 2.3.3
+      released: '2026-09-17'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@chainflip/rpc
+      repo_leg: github-org:chainflip-io
+      publisher_leg: email:chainflip.io
+      matched_by: domain
+    - name: '@chainflip/scale'
+      version: 2.3.1
+      released: '2026-09-17'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@chainflip/scale
+      repo_leg: github-org:chainflip-io
+      publisher_leg: email:chainflip.io
+      matched_by: domain
+    - name: '@chainflip/sdk'
+      version: 2.3.1
+      released: '2026-09-23'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@chainflip/sdk
+      repo_leg: github-org:chainflip-io
+      publisher_leg: email:chainflip.io
+      matched_by: domain
+    - name: '@chainflip/solana'
+      version: 2.3.1
+      released: '2026-09-17'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@chainflip/solana
+      repo_leg: github-org:chainflip-io
+      publisher_leg: email:chainflip.io
+      matched_by: domain
+    current: true
+    signal_note: 'an official package on the registry: distribution, not an integration; lapsed = no release in
+      24 months'
+    detected_by: sweep-official-sdks.py
+    detected: '2026-10-18'
+  detected_by: sweep-official-sdks.py
+  first_seen: '2026-10-18'
 generated: '2026-10-13'
 method: searched
 checked:
 - https://api.coingecko.com/api/v3/exchanges
+- https://api.nuget.org/v3
+- https://crates.io/api/v1
+- https://proxy.golang.org
+- https://pypi.org/pypi
+- https://registry.npmjs.org
+- https://repo1.maven.org/maven2
+- https://rubygems.org/api/v1
+source:
+- https://api.nuget.org/v3
+- https://crates.io/api/v1
+- https://proxy.golang.org
+- https://pypi.org/pypi
+- https://registry.npmjs.org
+- https://repo1.maven.org/maven2
+- https://rubygems.org/api/v1
